@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 
 export const UserPost = ({ posts = [] }) => {
   const { postId } = useParams();
+  console.log(`postId is: ${postId}`);
 
   if (!postId) {
     throw new Error("No URL parameter for postId");
